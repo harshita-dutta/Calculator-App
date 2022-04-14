@@ -20,6 +20,7 @@ body{
     text-align: center;
     color: white;
     font-family: monospace;
+    border: solid 5px transparent;
 }
 
 .container{
@@ -39,11 +40,12 @@ body{
     height: 50px;
     color: white;
     background: transparent;
-    border: 2px solid rgba(255,255,255,0.2);
+    border: 5px solid rgba(255,255,255,0.2);
+
 }
 .container input[type="button"]{
     outline: none;
-    font-size: 20px;
+    font-size: 21px;
     border: none;
     height: 65px;
     width: calc(100% /4 - 3px);
@@ -52,8 +54,17 @@ body{
     border-radius: 12px;
     margin-top: 15px;
     color: white;
+    font-family: monospace;
+    
 }
 
 .container input[type="button"]:hover{
     background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    color: rgb(61, 36, 0);
+
+}
+
+.container input[type="button"]:active{
+    box-shadow: none;
 }
